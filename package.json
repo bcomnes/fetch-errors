@@ -1,0 +1,39 @@
+{
+  "name": "fetch-errors",
+  "description": "WIP - nothing to see here",
+  "version": "0.0.0",
+  "main": "index.js",
+  "module": "main.js",
+  "author": "Bret Comnes <bcomnes@gmail.com> (https://bret.io)",
+  "bugs": {
+    "url": "https://github.com/bcomnes/fetch-errors/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "dependency-check": "^4.1.0",
+    "npm-run-all": "^4.1.5",
+    "semistandard": "^14.2.0",
+    "tape": "^4.11.0",
+    "tape-promise": "^4.0.0",
+    "esm": "^3.2.25"
+  },
+  "homepage": "https://github.com/bcomnes/fetch-errors",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcomnes/fetch-errors.git"
+  },
+  "scripts": {
+    "test": "run-s test:*",
+    "test:deps": "dependency-check . --no-dev --no-peer",
+    "test:semistandard": "semistandard",
+    "test:tape": "tape -r esm test.js"
+  },
+  "semistandard": {
+    "ignore": [
+      "dist"
+    ]
+  }
+}
