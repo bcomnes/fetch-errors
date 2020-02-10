@@ -3,7 +3,6 @@
   "description": "WIP - nothing to see here",
   "version": "2.0.0",
   "main": "index.js",
-  "module": "main.js",
   "author": "Bret Comnes <bcomnes@gmail.com> (https://bret.io)",
   "bugs": {
     "url": "https://github.com/bcomnes/fetch-errors/issues"
@@ -28,7 +27,7 @@
     "test": "run-s test:*",
     "test:deps": "dependency-check . --no-dev --no-peer",
     "test:semistandard": "semistandard",
-    "test:tape": "tape -r esm test.js"
+    "test:tape": "tape test.js"
   },
   "semistandard": {
     "ignore": [
